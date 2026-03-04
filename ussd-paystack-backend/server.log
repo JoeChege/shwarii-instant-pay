@@ -1,0 +1,5 @@
+[2m2026-03-03T12:54:41.551696Z[0m [32m INFO[0m [2mussd_paystack[0m[2m:[0m ✅ Configuration loaded successfully
+[2m2026-03-03T12:54:41.598026Z[0m [32m INFO[0m [2mussd_paystack[0m[2m:[0m 🚀 Africa's Talking USSD server live on http://0.0.0.0:3000
+[2m2026-03-03T12:54:41.598044Z[0m [32m INFO[0m [2mussd_paystack[0m[2m:[0m → Set your callback URL in Africa's Talking to: https://34.122.249.119/ussd
+[2m2026-03-03T12:54:44.566390Z[0m [32m INFO[0m [2mussd_paystack[0m[2m:[0m USSD | session=test123 | phone=0722000000 | text='' | network=Some("63902")
+[2m2026-03-03T12:54:45.363092Z[0m [31mERROR[0m [2mussd_paystack[0m[2m:[0m ❌ Failed to trigger STK push for 254722000000: Paystack error (401 Unauthorized): Invalid key
