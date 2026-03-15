@@ -1,0 +1,13 @@
+nohup: ignoring input
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.08s
+     Running `target/debug/ussd-paystack`
+[2m2026-03-15T07:02:29.499655Z[0m [32m INFO[0m [2mussd_paystack[0m[2m:[0m ✅ Configuration loaded successfully
+[2m2026-03-15T07:02:29.583353Z[0m [32m INFO[0m [2mussd_paystack[0m[2m:[0m 🚀 Africa's Talking USSD server live on http://0.0.0.0:3000
+[2m2026-03-15T07:02:29.583387Z[0m [32m INFO[0m [2mussd_paystack[0m[2m:[0m → Set your callback URL in Africa's Talking to: https://34.122.249.119/ussd
+[2m2026-03-15T07:04:15.031367Z[0m [32m INFO[0m [2mussd_paystack[0m[2m:[0m 📨 [INCOMING USSD] session=live_payment | phone=254722000000 | text='' | network=Some("63902")
+[2m2026-03-15T07:04:15.031421Z[0m [32m INFO[0m [2mussd_paystack[0m[2m:[0m 🔄 First dial detected (empty text) - triggering STK push
+[2m2026-03-15T07:04:15.031445Z[0m [32m INFO[0m [2mussd_paystack[0m[2m:[0m 📱 Normalized phone: 254722000000 → 254722000000
+[2m2026-03-15T07:04:15.031477Z[0m [32m INFO[0m [2mussd_paystack::paystack[0m[2m:[0m 🔗 [PAYSTACK REQUEST] phone=254722000000 | formatted=+254722000000 | amount=100 KES (100 cents) | provider=mpesa | currency=KES
+[2m2026-03-15T07:04:15.952687Z[0m [31mERROR[0m [2mussd_paystack::paystack[0m[2m:[0m ❌ Paystack HTTP Error: 401 Unauthorized | Full Response: {"status":false,"message":"Invalid key","meta":{"nextStep":"Ensure that you provide the correct authorization key for the request"},"type":"validation_error","code":"invalid_Key"}
+[2m2026-03-15T07:04:15.952741Z[0m [31mERROR[0m [2mussd_paystack[0m[2m:[0m ❌ [FAILED] STK push error for 254722000000: HTTP 401 Unauthorized: {"status":false,"message":"Invalid key","meta":{"nextStep":"Ensure that you provide the correct authorization key for the request"},"type":"validation_error","code":"invalid_Key"}
+[2m2026-03-15T07:04:15.952759Z[0m [32m INFO[0m [2mussd_paystack[0m[2m:[0m 📤 Sending error response: END Payment failed: HTTP 401 Unauthorized: {"status":false,"message":"Invalid key","meta":{"nextStep":"Ensure that you provide the correct authorization key for the request"},"type":"validation_error","code":"invalid_Key"}. Please try again.
